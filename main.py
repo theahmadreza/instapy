@@ -120,7 +120,7 @@ links = driver.find_elements(By.XPATH, "//a")
 for link in links:
     post = link.get_attribute('href')
     
-    if '/reel/' in post:
+    if '/p/' in post:
         posts.append(post)
 
 print(posts)
